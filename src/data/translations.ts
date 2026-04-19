@@ -40,6 +40,7 @@ export const T = {
     viewSet: "View set deal",
     individualPrice: "Individual price:",
     setItemsCount: "items",
+    shareOnFb: "Share",
   },
   es: {
     siteTitle: "Venta por Mudanza",
@@ -82,6 +83,7 @@ export const T = {
     viewSet: "Ver oferta en set",
     individualPrice: "Precio individual:",
     setItemsCount: "artículos",
+    shareOnFb: "Compartir",
   },
   uk: {
     siteTitle: "\u0420\u043e\u0437\u043f\u0440\u043e\u0434\u0430\u0436 \u0447\u0435\u0440\u0435\u0437 \u043f\u0435\u0440\u0435\u0457\u0437\u0434",
@@ -124,6 +126,7 @@ export const T = {
     viewSet: "\u041f\u0435\u0440\u0435\u0433\u043b\u044f\u043d\u0443\u0442\u0438 \u043d\u0430\u0431\u0456\u0440",
     individualPrice: "\u0406\u043d\u0434\u0438\u0432\u0456\u0434\u0443\u0430\u043b\u044c\u043d\u0430 \u0446\u0456\u043d\u0430:",
     setItemsCount: "\u043f\u0440\u0435\u0434\u043c\u0435\u0442\u0456\u0432",
+    shareOnFb: "\u041f\u043e\u0434\u0456\u043b\u0438\u0442\u0438\u0441\u044f",
   },
   pt: {
     siteTitle: "Venda por Mudan\u00e7a",
@@ -166,6 +169,7 @@ export const T = {
     viewSet: "Ver oferta em conjunto",
     individualPrice: "Preço individual:",
     setItemsCount: "artigos",
+    shareOnFb: "Partilhar",
   }
 };
 

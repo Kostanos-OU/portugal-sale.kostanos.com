@@ -83,6 +83,7 @@ img { max-width: 100%; display: block; }
 .btn:hover { opacity: 0.9; }
 .btn-whatsapp { background: var(--wa-green); color: #fff; }
 .btn-email { background: var(--primary); color: #fff; }
+.btn-facebook { background: #1877f2; color: #fff; }
 
 /* Item Grid */
 .item-grid {
