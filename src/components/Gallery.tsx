@@ -9,9 +9,10 @@ interface Props {
   initialIndex: number;
   lightbox: boolean;
   searchParams: string;
+  basePath?: string;
 }
 
-export function Gallery({ images, alt, itemId, initialIndex, lightbox, searchParams }: Props) {
+export function Gallery({ images, alt, itemId, initialIndex, lightbox, searchParams, basePath = "/item" }: Props) {
   const navigate = useNavigate();
   const touchStart = useRef(0);
   const qs = searchParams ? `?${searchParams}` : "";
@@ -26,7 +27,7 @@ export function Gallery({ images, alt, itemId, initialIndex, lightbox, searchPar
   const next = useCallback(() => setIndex(i => (i + 1) % images.length), [images.length]);
 
   const openLightbox = useCallback(() => {
-    navigate(`/item/${itemId}/i${index + 1}${qs}`);
+    navigate(`${basePath}/${itemId}/i${index + 1}${qs}`);
   }, [navigate, itemId, index, qs]);
 
   const closeLightbox = useCallback(() => {
@@ -34,7 +35,7 @@ export function Gallery({ images, alt, itemId, initialIndex, lightbox, searchPar
   }, [navigate]);
 
   const lightboxGoTo = useCallback((i: number) => {
-    navigate(`/item/${itemId}/i${i + 1}${qs}`, { replace: true });
+    navigate(`${basePath}/${itemId}/i${i + 1}${qs}`, { replace: true });
     setIndex(i);
   }, [navigate, itemId, qs]);
 

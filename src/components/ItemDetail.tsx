@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Markdown from "react-markdown";
 import { useLang } from "../hooks/useLang";
 import { ITEMS } from "../data/items";
+import { getSetsForItem, getSetPricing } from "../data/sets";
 import { Gallery } from "./Gallery";
 import { PriceBadge } from "./PriceBadge";
 import { ConditionBadge } from "./ConditionBadge";
@@ -76,6 +77,18 @@ export function ItemDetail() {
               {item.desc[lang]}
             </Markdown>
           </div>
+
+          {getSetsForItem(item.id).map(set => {
+            const { setPrice, totalOriginal, effectiveDiscount } = getSetPricing(set);
+            return (
+              <Link key={set.id} to={`/set/${set.id}?${searchParams.toString()}`} className="set-banner">
+                <span className="set-banner-badge">{t.setBadge} -{effectiveDiscount}%</span>
+                <span className="set-banner-title">{set.title[lang]}</span>
+                <span className="set-banner-price"><s>&euro;{totalOriginal}</s> &euro;{setPrice}</span>
+                <span className="set-banner-cta">{t.viewSet} &rarr;</span>
+              </Link>
+            );
+          })}
 
           <div className="detail-actions">
             <a href={`mailto:${CONTACT_EMAIL}?subject=${mailSubject}&body=${mailBody}`} className="btn btn-email">
