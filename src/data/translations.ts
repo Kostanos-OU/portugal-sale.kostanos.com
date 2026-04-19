@@ -31,6 +31,7 @@ export const T = {
     deliveryLocal: "Delivery within 70km from Oleiros",
     deliveryMalaga: "Delivery to Malaga possible",
     priceAsk: "Ask for price",
+    freeGift: "Gift included",
   },
   es: {
     siteTitle: "Venta por Mudanza",
@@ -64,6 +65,7 @@ export const T = {
     deliveryLocal: "Entrega hasta 70km de Oleiros",
     deliveryMalaga: "Entrega a M\u00e1laga posible",
     priceAsk: "Consultar precio",
+    freeGift: "Regalo incluido",
   },
   uk: {
     siteTitle: "\u0420\u043e\u0437\u043f\u0440\u043e\u0434\u0430\u0436 \u0447\u0435\u0440\u0435\u0437 \u043f\u0435\u0440\u0435\u0457\u0437\u0434",
@@ -97,6 +99,7 @@ export const T = {
     deliveryLocal: "\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u0432 \u0440\u0430\u0434\u0456\u0443\u0441\u0456 70\u043a\u043c \u0432\u0456\u0434 Oleiros",
     deliveryMalaga: "\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u0434\u043e \u041c\u0430\u043b\u0430\u0433\u0438 \u043c\u043e\u0436\u043b\u0438\u0432\u0430",
     priceAsk: "\u0417\u0430\u043f\u0438\u0442\u0430\u0442\u0438 \u0446\u0456\u043d\u0443",
+    freeGift: "\u041f\u043e\u0434\u0430\u0440\u0443\u043d\u043e\u043a",
   },
   pt: {
     siteTitle: "Venda por Mudan\u00e7a",
@@ -130,6 +133,7 @@ export const T = {
     deliveryLocal: "Entrega at\u00e9 70km de Oleiros",
     deliveryMalaga: "Entrega a M\u00e1laga poss\u00edvel",
     priceAsk: "Consultar pre\u00e7o",
+    freeGift: "Oferta incluída",
   }
 };
 

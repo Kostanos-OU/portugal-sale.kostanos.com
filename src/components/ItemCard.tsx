@@ -28,6 +28,7 @@ export function ItemCard({ item }: { item: Item }) {
       <div className="card-body">
         <div className="card-badges">
           <ConditionBadge condition={item.condition} />
+          {item.freeGift && <span className="badge gift-badge">{t.freeGift}</span>}
         </div>
         <h3 className="card-title">{item.title[lang]}</h3>
         <PriceBadge price={item.price} originalPrice={item.originalPrice} />
