@@ -1,3 +1,9 @@
+# Portugal Sale — SUNSET
+
+> **Status: SUNSET.** Moving sale is over. All items are marked `status: "sold"` and the WhatsApp/email contact buttons have been removed from the UI. The phone number and email constants were also removed from `src/constants.ts` so they no longer ship in the build (they remain in pre-sunset git history).
+>
+> Item data, images, translations, and components are **not deleted** — to relist, revert the sunset commit or flip statuses back to `"available"` in `src/data/items.ts`.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
