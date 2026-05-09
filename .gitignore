@@ -32,3 +32,9 @@ lerna-debug.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Local Claude session metadata + agent skills
+SESSION_HISTORY.json
+.agents/
+.claude/
+skills-lock.json
